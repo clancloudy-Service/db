@@ -1,0 +1,52 @@
+--insert into public."account"(id,name,modifieddate,createddate,modifiedby,createdby) values(1,'BAAPGI',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+--select * from public."account";
+
+--select * from public."branch";
+--insert into public."branch"(id,name,branch_name,account,zone,modifieddate,createddate,modifiedby,createdby) values(1,'BAAPGI','BAAPGI Kalyan','1','1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+
+--select * from public."product";
+--insert into public."product"(id,name,modifieddate,createddate,modifiedby,createdby) values(1,'P1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+
+--select * from public."product_line_item";
+--insert into public."product_line_item"(id,name,modifieddate,createddate,modifiedby,createdby,product,branch) values(1,'Cheez Swarma',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin',1,1)
+
+--select * from public."product_category_junction";
+--insert into public."product_category_junction"(id,name,product,product_category,modifieddate,createddate,modifiedby,createdby) values(1,'PCJ1',1,1,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+
+--select * from public."product_category";
+insert into public."product_category"(id,name,type,modifieddate,createddate,modifiedby,createdby) values(2,'PC2','veg',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+insert into public."product_category"(id,name,type,modifieddate,createddate,modifiedby,createdby) values(3,'PC2','Non-veg',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+
+
+
+insert into public."branch"(id,name,branch_name,account,zone,modifieddate,createddate,modifiedby,createdby) values(2,'BAAPGI2','BAAPGI Kalyan2','1','1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."branch"(id,name,branch_name,account,zone,modifieddate,createddate,modifiedby,createdby) values(3,'BAAPGI3','BAAPGI Kalyan3','1','1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+
+
+
+insert into public."product"(id,name,modifieddate,createddate,modifiedby,createdby) values(2,'P2',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+insert into public."product"(id,name,modifieddate,createddate,modifiedby,createdby) values(3,'P3',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+
+
+insert into public."product_line_item"(id,name,modifieddate,createddate,modifiedby,createdby,product,branch) values(2,'PLI2',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin',2,1)
+
+insert into public."product_line_item"(id,name,modifieddate,createddate,modifiedby,createdby,product,branch) values(4,'Cheez Swarma',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin',3,1)
+
+insert into public."product_line_item"(id,name,modifieddate,createddate,modifiedby,createdby,product,branch) values(5,'Cheez Swarma',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin',1,1)
+
+insert into public."product_category_junction" (id,name,product,product_category,modifieddate,createddate,modifiedby,createdby)  values(1,'PCJ1',1,1,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+insert into public."product_category_junction" (id,name,product,product_category,modifieddate,createddate,modifiedby,createdby)  values(2,'PCJ1',2,2,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+insert into public."product_category_junction" (id,name,product,product_category,modifieddate,createddate,modifiedby,createdby)  values(2,'PCJ1',2,3,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+insert into public."product_category_junction" (id,name,product,product_category,modifieddate,createddate,modifiedby,createdby)  values(3,'PCJ1',1,2,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin')
+
+
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(1,'PliCJ1',1,1,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(2,'PliCJ2',2,2,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(3,'PliCJ3',2,3,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(4,'PliCJ4',3,3,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(5,'PliCJ5',3,2,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(6,'PliCJ6',4,1,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+insert into public."pli_category_junction" (id,name,product_line_item,product_category,modifieddate,createddate,modifiedby,createdby)  values(7,'PliCJ7',5,3,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP,'admin','admin');
+
+
+
